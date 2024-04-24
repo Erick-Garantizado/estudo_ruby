@@ -38,10 +38,14 @@ class Gato < Pet
     end
 end
 
+class Ave < Pet
+    def initialize(nome, raca)
+        super(nome, especie="Ave", som="canta", locomocao="voa", raca)
+    end
+end
 
 
 dog = Cachorro.new("Nero", "dog-alemao")
-
 puts "Nome: #{dog.nome}"
 puts "Escpecie: #{dog.especie}"
 puts "Meio de mover: #{dog.locomocao}"
